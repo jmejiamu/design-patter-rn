@@ -19,6 +19,13 @@ const PATTERNS: Pattern[] = [
     summary: "Diagnose anti-patterns, then refactor with confidence.",
     route: "/component-composition",
   },
+  {
+    id: "presentational-component",
+    label: "Featured Track",
+    title: "Presentational Component",
+    summary: "Best practices for managing state in React Native apps.",
+    route: "/presentational-component",
+  },
 ];
 
 const PatternCard = ({ pattern }: { pattern: Pattern }) => {
@@ -27,7 +34,6 @@ const PatternCard = ({ pattern }: { pattern: Pattern }) => {
     <Pressable
       style={styles.card}
       onPress={() => router.push(pattern.route as Href)}
-      disabled={pattern.id !== "component-composition"}
     >
       <View style={styles.cardHeader}>
         <Text style={styles.cardLabel}>{pattern.label}</Text>
@@ -38,9 +44,7 @@ const PatternCard = ({ pattern }: { pattern: Pattern }) => {
         ) : null}
       </View>
       <View style={styles.cardFooter}>
-        <Text style={styles.cardAction}>
-          {pattern.id === "component-composition" ? "Open" : "Notify me"}
-        </Text>
+        <Text style={styles.cardAction}>{"Open"}</Text>
       </View>
     </Pressable>
   );
