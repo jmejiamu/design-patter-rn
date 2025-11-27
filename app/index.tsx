@@ -16,15 +16,25 @@ const PATTERNS: Pattern[] = [
     id: "component-composition",
     label: "Featured Track",
     title: "Component Composition",
-    summary: "Diagnose anti-patterns, then refactor with confidence.",
+    summary:
+      "Use component composition to organize UI, remove duplication, and simplify logic.",
     route: "/component-composition",
   },
   {
     id: "presentational-component",
     label: "Featured Track",
     title: "Presentational Component",
-    summary: "Best practices for managing state in React Native apps.",
+    summary:
+      "A UI-only React Native component that receives all data via props and contains no business logic.",
     route: "/presentational-component",
+  },
+  {
+    id: "higher-order-component",
+    label: "Featured Track",
+    title: "Higher-Order Component",
+    summary:
+      "A function that takes a component and returns a new component with enhanced behavior or data.",
+    route: "/higher-order-component",
   },
 ];
 
