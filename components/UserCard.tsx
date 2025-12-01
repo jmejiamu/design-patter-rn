@@ -5,6 +5,7 @@ interface UserCardProps {
   name: string;
   email: string;
   avatar: string;
+  isLoading?: boolean;
 }
 
 export const UserCard = ({ name, email, avatar }: UserCardProps) => {
