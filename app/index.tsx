@@ -36,6 +36,14 @@ const PATTERNS: Pattern[] = [
       "A function that takes a component and returns a new component with enhanced behavior or data.",
     route: "/higher-order-component",
   },
+  {
+    id: "stateless-stateful-component",
+    label: "Featured Track",
+    title: "Stateless/Stateful Component",
+    summary:
+      "Separate components based on whether they manage state or simply render UI based on props.",
+    route: "/stateless-stateful-component",
+  },
 ];
 
 const PatternCard = ({ pattern }: { pattern: Pattern }) => {
