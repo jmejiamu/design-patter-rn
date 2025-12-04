@@ -44,6 +44,14 @@ const PATTERNS: Pattern[] = [
       "Separate components based on whether they manage state or simply render UI based on props.",
     route: "/stateless-stateful-component",
   },
+  {
+    id: "render-props",
+    label: "Featured Track",
+    title: "Render Props",
+    summary:
+      "A technique for sharing code between React components using a prop whose value is a function.",
+    route: "/render-props",
+  },
 ];
 
 const PatternCard = ({ pattern }: { pattern: Pattern }) => {
